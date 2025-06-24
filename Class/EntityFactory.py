@@ -1,10 +1,15 @@
 
-
-
+from Class.Background import Background
 from Class.Entity import Entity
-
-
+from Class.Const import *
 class EntityFactory:
 
-    def get_entity(self, entity_type:str) -> Entity:
-        return Entity()
+    @staticmethod
+    def get_entity(entity_name:str, position:tuple = (0, 0)):
+        match entity_name:
+            case "Level1Bg":
+                list_bg = []
+                for i in range(7):
+                    list_bg.append(Background(f'Level1Bg{i}', (0,0)))
+                    list_bg.append(Background(f'Level1Bg{i}', (WIN_WIDTH,0)))
+                return list_bg
