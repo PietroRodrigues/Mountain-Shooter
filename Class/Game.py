@@ -16,14 +16,9 @@ class Game:
             menu = Menu(self.window)
             menu_return = menu.run()
 
-            if menu_return == MENU_OPTION[0]:
-                print("Start Game")
+            if menu_return == MENU_OPTION[0] or menu_return == MENU_OPTION[1] or menu_return == MENU_OPTION[2]:
                 level = Level(self.window, 'Level1', menu_return)
                 level.run()
-            elif menu_return == MENU_OPTION[1]:
-                pass
-            elif menu_return == MENU_OPTION[2]:
-                pass
             elif menu_return == MENU_OPTION[3]:
                 pass
             elif menu_return == MENU_OPTION[4]:
