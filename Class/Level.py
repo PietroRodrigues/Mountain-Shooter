@@ -1,6 +1,8 @@
 import pygame
 import random
 from Class.Entity import Entity
+from Class.Player import Player
+from Class.Enemy import Enemy
 from Class.EntityFactory import EntityFactory
 from Class.Const import *
 import sys
@@ -45,6 +47,11 @@ class Level:
             for ent in self.entity_list:
                 self.window.blit(source=ent.surf, dest=ent.rect)
                 ent.move()
+                if isinstance(ent, (Player, Enemy)):
+                    shot = ent.shoot()
+                    if shot:
+                        self.entity_list.append(shot)
+
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()

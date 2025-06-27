@@ -26,18 +26,15 @@ ENTITY_SPEED = {
     "Level1Bg5": 5,
     "Level1Bg6": 6,
     "Player1": 5,
+    "Player1Shot": 10,
     "Player2": 5,
-    "Enemy1": 3,
+    "Player2Shot": 10,
+    "Enemy1": 1,
+    "Enemy1Shot": 8,
     "Enemy2": 2,
+    "Enemy2Shot": 4,
 }
 ENTITY_HEALTH = {
-    "Level1Bg0": 999,
-    "Level1Bg1": 999,
-    "Level1Bg2": 999,
-    "Level1Bg3": 999,
-    "Level1Bg4": 999,
-    "Level1Bg5": 999,
-    "Level1Bg6": 999,
     "Player1": 300,
     "Player2": 300,
     "Enemy1": 50,
@@ -63,9 +60,16 @@ PLAYER_KEY_RIGHT = {
     "Player1": K_d,
     "Player2": K_RIGHT
 }
-PLAYER_KEY_FIRE = {
+PLAYER_KEY_SHOOT = {
     "Player1": K_SPACE,
     "Player2": K_RETURN
+}
+
+ENTITY_SHOOT_DELAY = {
+    "Player1": 20,
+    "Player2": 20,
+    "Enemy1": 100,
+    "Enemy2": 50,
 }
 
 VOLUME = {
