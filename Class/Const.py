@@ -30,6 +30,19 @@ ENTITY_SPEED = {
     "Enemy1": 3,
     "Enemy2": 2,
 }
+ENTITY_HEALTH = {
+    "Level1Bg0": 999,
+    "Level1Bg1": 999,
+    "Level1Bg2": 999,
+    "Level1Bg3": 999,
+    "Level1Bg4": 999,
+    "Level1Bg5": 999,
+    "Level1Bg6": 999,
+    "Player1": 300,
+    "Player2": 300,
+    "Enemy1": 50,
+    "Enemy2": 60
+}
 
 EVENT_ENEMY = USEREVENT + 1
 ENEMY_SPAWN_RATE = 4000  # milliseconds
