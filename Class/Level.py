@@ -51,7 +51,12 @@ class Level:
                     shot = ent.shoot()
                     if shot:
                         self.entity_list.append(shot)
-
+                    if (ent.name == 'Player1'):
+                        self.Level_text(18, f'Player1 - Health:{ent.health} | Score:{ent.score}' , C_GREEN, (10, 25))
+                    if (ent.name == 'Player2'):
+                        self.Level_text(18, f'Player2 - Health:{ent.health} | Score:{ent.score}', C_CYAN, (10, 45))
+                       
+            
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -62,9 +67,9 @@ class Level:
                     if isinstance(enemy, Entity):
                         self.entity_list.append(enemy)
 
-            self.Level_text(18, f'{self.name} - Timeout : {self.timeout / 1000:.1f}s', COLOR_WHITE, (10, 5))
-            self.Level_text(18, f'FPS: {clock.get_fps():.0f}', COLOR_WHITE, (10, WIN_HEIGHT - 35))
-            self.Level_text(18, f'Entidades: {len(self.entity_list)}', COLOR_WHITE, (10, WIN_HEIGHT - 20))
+            self.Level_text(18, f'{self.name} - Timeout : {self.timeout / 1000:.1f}s', C_WHITE, (10, 5))
+            self.Level_text(18, f'FPS: {clock.get_fps():.0f}', C_WHITE, (10, WIN_HEIGHT - 35))
+            self.Level_text(18, f'Entidades: {len(self.entity_list)}', C_WHITE, (10, WIN_HEIGHT - 20))
             pygame.display.flip()
 
             #Colision and Health Verification

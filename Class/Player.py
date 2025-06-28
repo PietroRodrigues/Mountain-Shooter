@@ -8,6 +8,7 @@ class Player(Entity):
         super().__init__(name, position)
         self.health = ENTITY_HEALTH[self.name]
         self.shoot_delay = ENTITY_SHOOT_DELAY[self.name]
+        self.score = 0
 
     def move(self):
         

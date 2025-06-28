@@ -9,6 +9,8 @@ class Enemy(Entity):
         super().__init__(name, position)
         self.health = ENTITY_HEALTH[self.name]
         self.shoot_delay = ENTITY_SHOOT_DELAY[self.name]
+        self.last_damage = ""
+        self.score = ENTITY_SCORE[self.name]
 
     def move(self):
         self.rect.centerx -= ENTITY_SPEED[self.name]

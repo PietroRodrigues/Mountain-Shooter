@@ -5,9 +5,11 @@ WIN_WIDTH = 546
 WIN_HEIGHT = 324
 
 # C
-COLOR_ORANGE = (255, 128, 0)
-COLOR_WHITE = (255, 255, 255)
-COLOR_YELLOW = (255, 255, 0)
+C_ORANGE = (255, 128, 0)
+C_WHITE = (255, 255, 255)
+C_YELLOW = (255, 255, 0)
+C_GREEN = (0, 128, 0)
+C_CYAN = (0, 128, 128)
 
 # M
 MENU_OPTION = ("NEW GAME 1P",
@@ -70,6 +72,18 @@ ENTITY_SHOOT_DELAY = {
     "Player2": 20,
     "Enemy1": 100,
     "Enemy2": 50,
+}
+
+ENTITY_SHOOT_DAMAGE = {
+    "Player1Shot": 10,
+    "Player2Shot": 10,
+    "Enemy1Shot": 10,
+    "Enemy2Shot": 10
+}
+
+ENTITY_SCORE = {
+    "Enemy1": 10,
+    "Enemy2": 20
 }
 
 VOLUME = {
