@@ -27,6 +27,11 @@ ENTITY_SPEED = {
     "Level1Bg4": 4,
     "Level1Bg5": 5,
     "Level1Bg6": 6,
+    "Level2Bg0": 0,
+    "Level2Bg1": 1,
+    "Level2Bg2": 2,
+    "Level2Bg3": 3,
+    "Level2Bg4": 4,
     "Player1": 5,
     "Player1Shot": 10,
     "Player2": 5,
@@ -43,8 +48,11 @@ ENTITY_HEALTH = {
     "Enemy2": 60
 }
 
+TIMEOUT_LEVEL = 100000 #100 seconds
+EVENT_TIMEOUT = USEREVENT + 2
+TIMEOUT_STAP = 100
 EVENT_ENEMY = USEREVENT + 1
-ENEMY_SPAWN_RATE = 4000  # milliseconds
+ENEMY_SPAWN_RATE = 2000  # milliseconds
 
 PLAYER_KEY_UP = {
     "Player1": K_w,
